@@ -1,0 +1,59 @@
+body {
+  color: #05080C;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  background:#F6F6F6
+}
+
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+  border-top: 5px solid #222222;
+  padding: 0 100px;
+}
+
+article {
+  border-bottom: 5px solid #222222;
+  padding: 0 100px;
+}
+
+article img {
+  float: right;
+  margin-left: 20px;
+}
+
+th {
+  background: #222;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  background: #eee;
+  padding: 10px;
+}
+
+a:link {
+  color: rgb(18, 18, 203);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(167, 121, 22);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+img {
+  border: 15px solid #9d9da2;
+  border-style: inset;
+}

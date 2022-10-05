@@ -46,33 +46,34 @@ a {
 }
 
 .relaxr-corestyles h1 {
-  font-size: 40px
+  font-size: 40px;
 }
 
 .relaxr-corestyles h2 {
-  font-size: 32px
+  font-size: 32px;
 }
 
 .relaxr-corestyles h3 {
-  font-size: 26px
+  font-size: 26px;
 }
 
 .relaxr-corestyles h4 {
-  font-size: 20px
+  font-size: 20px;
 }
 
 .relaxr-corestyles h5 {
-  font-size: 18px
+  font-size: 18px;
 }
 
 .relaxr-corestyles h6 {
-  font-size: 16px
+  font-size: 16px;
 }
 
 .relaxr-corestyles p {
   font-size: 26px;
 }
-.relaxr-corestyles p.fetureText p {
+
+.relaxr-corestyles p.featuredText {
   font-style: italic;
   font-size: 30px;
  }
@@ -81,12 +82,12 @@ a {
   font-style: italic;
 }
 
-.relaxr-corestyles p.fetureText em {
-  font-style:normal;
+ .relaxr-corestyles p.featuredText em {
+  font-style: normal;
 } 
 
-.relaxr-corestyles strong{
-   font-weight: bold;
+.relaxr-corestyles strong {
+   font-weight: 600;
 }
 
 

@@ -1,0 +1,21 @@
+
+.exerciseHeader, .exerciseFooter, .exerciseMain {
+    margin: 0 10px 10px 10px;   
+    justify-content: space-around;
+}
+
+.exerciseMain {
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+.exerciseMainContent {
+    width: 70%;
+    
+}
+.exerciseMainAside {
+    width: 30%;
+
+}

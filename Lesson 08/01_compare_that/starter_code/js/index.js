@@ -14,13 +14,13 @@
       if(isNaN(a) || isNaN(b)){
         comparison = "N/A";
       } else if (a > b){
-            // Is A more than B
+    // Is A more than B
         comparison = ">";
       } else if (a < b){
-            // Is B more than A
+    // Is B more than A
         comparison = "<";
       } else (a == b){
-         // Is A equal to B
+    // Is A equal to B
         comparison = "=";
       }
 

@@ -7,6 +7,7 @@ const cloudFive = document.getElementById('cloud-five');
 const javascript = document.getElementById('javascript');
 const react = document.getElementById('react');
 const htmlcss = document.getElementById('htmlcss');
+const letsLearn = document.getElementById('lets-learn');
 const marioYFromBottom = 5;
 const cloudOneYFromBottom = 40;
 const cloudOneYMarginLeft = 60;
@@ -60,6 +61,7 @@ function move() {
     javascript.style.marginRight = javascriptMarginRight + incrementer * 2.2 + "%";
     react.style.marginRight = reactMarginRight + incrementer * 1.5 + "%";
     htmlcss.style.marginRight = htmlcssMarginRight + incrementer * 1 + "%";
+
 }
 
 window.addEventListener('scroll', move);

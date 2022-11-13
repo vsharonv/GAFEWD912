@@ -1,7 +1,9 @@
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 html{
     overflow-x:hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -9,6 +11,8 @@ body {
     padding:0;
     overflow-x:hidden;
 }
+
+/* Home Section */
 
 .sky {
     position: relative;
@@ -67,26 +71,29 @@ body {
     width: 13%;
 }
 
-.open-grass-section{
-    height: 900px;
+/* Grass Section */
+
+.open-grass-section {
+    height: 600px;
     background-color: #78D22B;
     padding: 25px;
 }
 
-.open-grass-section h1{
+.open-grass-section h1 {
     color: white;
     font-family: 'Press Start 2P', cursive;
     font-size: 25px;
 }
 
-.open-grass-section h2{
+.open-grass-section a {
     color: black;
+    text-decoration: none;
     font-family: 'Press Start 2P', cursive;
     font-size: 50px;
     animation: blink 1.2s linear infinite;
 }
 
-@keyframes blink{
+@keyframes blink {
     0%{opacity: 0;}
     50%{opacity: .5;}
     100%{opacity: 1;}
@@ -97,8 +104,8 @@ body {
     background-size: cover;
     width:100%;
     height:100%;
-    padding-top: 400px;
-    padding-bottom: 500px;
+    padding-top: 200px;
+    padding-bottom: 300px;
   }
 
 /* Container holding the image and the text */
@@ -278,6 +285,7 @@ body {
     } 
 }
 
+/* Home Section Fade In */
 
 .custom-fade-in-800 {
     display:none;
@@ -287,8 +295,9 @@ body {
     display:none;
 }
 
+/* Home,Menu Button Styling */
 .main-menu-button {
-    padding-top: 150px;
+    padding-top: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -300,7 +309,10 @@ body {
 .main-menu-button a {
     width: 250px;
     height: 50px;
+    font-size: 20px;
 }
+
+/* About Me Section*/
 
 .three-about-me {
     width:100%;
@@ -324,14 +336,14 @@ body {
     gap:30px;
 }
 
-.energy-level{
+.energy-level {
     padding-bottom: 50px;
     margin:auto;
     width: 30%;
     height: 30%;
 }
 
-.nes-progress{
+.nes-progress {
     animation: blink 2s linear infinite;
 }
 
@@ -348,12 +360,19 @@ body {
     display: inline-block;
 }
 
-.image-container img{
+.image-container img {
     border-radius: 200px;
     max-height: 400px;
     max-width: 400px;
 }
 
+.gif-generator{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+  
 
 
 

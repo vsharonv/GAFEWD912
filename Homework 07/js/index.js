@@ -65,3 +65,10 @@ function move() {
 }
 
 window.addEventListener('scroll', move);
+
+// Run when the page/DOM finishes loading
+$(document).ready(function() {
+    // CSS display none set up on page load then allow JQUERY to fade in
+    $('.custom-fade-in-800').fadeIn("800");
+    $('.custom-fade-in-slow').fadeIn("slow");
+});

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+html{
+    overflow-x:hidden;
+}
+
 body {
     margin:0;
     padding:0;
@@ -10,7 +14,7 @@ body {
     position: relative;
     background-image: linear-gradient( #F3BADB, #F6D19C);
     width: 100%;
-    height:90vh;
+    height:80vh;
     display: flex;
     justify-content: center;
 }
@@ -63,27 +67,38 @@ body {
     width: 13%;
 }
 
-.about-me{
-    height: 800px;
+.open-grass-section{
+    height: 900px;
     background-color: #78D22B;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+    padding: 25px;
 }
 
-.about-me h1{
+.open-grass-section h1{
     color: white;
     font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
+    font-size: 25px;
 }
+
+.open-grass-section h2{
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    animation: blink 1.2s linear infinite;
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+    }
 
 .three-retro-box-container {
     background-image: url("../img/pinkpatternbackground.jpg");
     background-size: cover;
     width:100%;
     height:100%;
-    padding-top: 250px;
-    padding-bottom: 260px;
+    padding-top: 400px;
+    padding-bottom: 500px;
   }
 
 /* Container holding the image and the text */
@@ -107,7 +122,6 @@ body {
     font-size: 80%;
     transform: translate(-50%, -50%);
 }
-
 
 @media screen and (min-width:760px) and (max-width:990px){
     .top-heading-first {
@@ -265,6 +279,80 @@ body {
 }
 
 
+.custom-fade-in-800 {
+    display:none;
+}
+
+.custom-fade-in-slow {
+    display:none;
+}
+
+.main-menu-button {
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.main-menu-button a {
+    width: 250px;
+    height: 50px;
+}
+
+.three-about-me {
+    width:100%;
+    height:100%;
+    background-color: #efe5d8;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.three-about-me h2{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-list {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+
+.energy-level{
+    padding-bottom: 50px;
+    margin:auto;
+    width: 30%;
+    height: 30%;
+}
+
+.nes-progress{
+    animation: blink 2s linear infinite;
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    20%{opacity: .3;}
+    60%{opacity: .6;}
+    80%{opacity: .9;}
+    100%{opacity: 1;}
+    }
+
+
+.three-information-container {
+    display: inline-block;
+}
+
+.image-container img{
+    border-radius: 200px;
+    max-height: 400px;
+    max-width: 400px;
+}
 
 
 

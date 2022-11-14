@@ -72,5 +72,6 @@ async function giphySearch(e) {
     }
 }
 
+
 // dont forget your event listener
-document.querySelector("#search-form").addEventListener("submit", giphySearch);
+document.querySelector("#blue-button").addEventListener("click", giphySearch);

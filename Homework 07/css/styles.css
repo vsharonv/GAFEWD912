@@ -331,6 +331,10 @@ body {
 }
 
 /* About Me Section*/
+
+.giphy-results{
+    display:none;
+}
 #about-sharon-id{
     border-radius:25px;
 }

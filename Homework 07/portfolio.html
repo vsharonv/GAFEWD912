@@ -137,24 +137,23 @@
                                 <div class="gif-generator">
                                     <form id="search-form">
                                         <label for="search-term">Enjoy your 8-bit Gifs from GIPHY!:</label>
-                                        <input type="text" id="name_field" class="nes-input" name="search-term"
-                                            value="8 bit retro game" />
+                                        <input type="text" id="name_field" class="nes-input" name="search-term" placeholder="..."/>
                                         <button type="button" class="nes-btn is-primary" id="blue-button">ENTER</button>
                                         <button type="button" class="nes-btn is-error" id="red-button">RESET</button>
                                     </form>
                                     <div class="row">
                                         <div class="col-lg-4">
-                                            <div id="giphy-results-A">
+                                            <div class="giphy-results" id="giphy-results-A">
                                                 <!-- CONTENT GOES HERE FROM JAVASCRIPT-->
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
-                                            <div id="giphy-results-B">
+                                            <div class="giphy-results" id="giphy-results-B">
                                                 <!-- CONTENT GOES HERE FROM JAVASCRIPT-->
                                             </div>
                                         </div>
                                         <div class="col-lg-4">
-                                            <div id="giphy-results-C">
+                                            <div class="giphy-results" id="giphy-results-C">
                                                 <!-- CONTENT GOES HERE FROM JAVASCRIPT-->
                                             </div>
                                         </div>
@@ -267,6 +266,7 @@
     <script src="js/AJAX.js"></script>
     <script src="js/index.js"></script>
     <!-- Sweet ALERT JS -->
+    <!-- SWAL DOCUMENTATION : https://sweetalert2.github.io/-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>

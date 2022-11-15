@@ -20,11 +20,6 @@
 
     <!-- Personal CSS-->
     <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Jquery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -84,10 +79,10 @@
                 <div class="col-lg-4">
                     <div data-aos="fade-up" data-aos-duration="1500" class="retro-box-123">
                         <img src="img/retrobox.png" class="img-fluid" alt="retrobox" />
-                        <div class="top-heading-third">"Contact Me"</div>
+                        <div class="top-heading-third">"Contact"</div>
                         <div class="bottom-paragraph-third">For all business inquiries, please contact Sharon using any
                             of the following below.</div>
-                        <a class="nes-btn" href="#">SELECT</a>
+                        <a class="nes-btn" href="#contact-me">SELECT</a>
                     </div>
                 </div>
             </div>
@@ -126,7 +121,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="nes-container is-dark with-title">
+                                <div id="about-sharon-id" class="nes-container is-dark with-title">
                                     <p class="title">H3110 W0R1D!</p>
                                     <p>
                                         Sharon is a passionate aspiring web developer!
@@ -176,6 +171,81 @@
         </div>
     </section>
 
+    <!-- Last Page Section -->
+    <section class="last-page-section">
+        <!-- Get in touch msg -->
+        <div class="get-in-touch" id="contact-me">
+            <h2>
+                <span class="badge text-bg-dark">Get in touch</span>
+            </h2>
+            <div class="mario-icon">
+                <i class="nes-mario"></i>
+            </div> 
+        </div>    
+        <!-- 2 8 2 Row to center contact form in large view-->
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">            
+                <!-- Contact Form-->
+                <div class="contact-form-field">   
+                    <div class="nes-field">
+                        <label for="name_field">First Name</label>
+                        <input type="text" id="name_field" name="firstname" placeholder="Your First Name..." class="nes-input">
+                    </div>
+                    <div class="nes-field">
+                        <label for="name_field">Last Name</label>
+                        <input type="text" id="name_field" name="lastname" placeholder="Your Last Name..." class="nes-input">
+                    </div>
+                    <label for="sucess_select">Country</label>
+                    <div class="nes-select is-success">
+                        <select required id="sucess_select">
+                            <option value="" disabled selected hidden>Select...</option>
+                            <option value="0">United States</option>
+                        </select>
+                    </div>
+                    <label for="default_select">State</label>
+                    <div class="nes-select is-warning">
+                        <select required id="warning_select">
+                            <option value="" disabled selected hidden>Select...</option>
+                            <option value="0">Alaska</option>
+                        </select>
+                    </div>
+                    <div class="nes-field">
+                        <label for="name_field">Subject</label>
+                        <input type="text" id="name_field" class="nes-input">
+                    </div>
+                    <label for="textarea_field">Message</label>
+                    <textarea id="textarea_field" class="nes-textarea"></textarea>
+                    <button type="button" class="nes-btn is-primary" id="send-button">SEND</button>    
+                </div>                  
+            </div>
+            <div class="col-lg-2"></div>
+        </div>    
+    </section>
+
+    <footer class="customized-footer-tab">
+        <div class="nav-footer-tab">
+            <nav>
+                <ul class="footer-menu">
+                    <li class="footer-menu-item">
+                        <a href="mailto:vsharonv91@gmail.com" class="footer__menu-link"><i class="nes-icon gmail is-large"></i>
+                        </a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="https://www.linkedin.com/in/%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BBgyeong-mi-sharon-kim-1877a4209/" class="footer__menu-link" target="_blank">
+                            <i class="nes-icon linkedin is-large"></i>
+                        </a>
+                    </li>
+                    <li class="footer-menu-item">
+                        <a href="https://github.com/vsharonv" class="footer__menu-link" target="_blank">
+                            <i class="nes-icon github is-large"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -187,9 +257,18 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <!-- Personal JavaScript -->
     <script src="js/AJAX.js"></script>
     <script src="js/index.js"></script>
+    <!-- Sweet ALERT JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>

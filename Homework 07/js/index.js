@@ -76,3 +76,29 @@ $(document).ready(function() {
     $('.custom-fade-in-800').fadeIn("800");
     $('.custom-fade-in-slow').fadeIn("slow");
 });
+
+// alert function after clicking send button in footer section
+
+function AlertSuccessfulContactFormSubmission()
+{
+    // Swal.fire(
+    //     'Great!',
+    //     'Your inquiry has been accepted. Sharon will reach out soon!',
+    //     'success'
+    // )   
+    Swal.fire({
+        title: 'Great!',
+        text: "Your inquiry has been accepted! Sharon will reach out soon!",
+        icon: 'success',
+        showCancelButton: true,
+        confirmButtonText: 'Yes submit!',
+        cancelButtonText: 'No! Take me back!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            location.reload();
+        }
+      })    
+}
+
+// Click event for SEND button
+document.querySelector("#send-button").addEventListener("click", AlertSuccessfulContactFormSubmission);

@@ -5,18 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="description" content="Sharon is a passionate aspiring web developer who has built several demo projects using HTML,CSS, and JS.">
-    <title>Sharon Kim | Front-End Web Developer</title>
+    <title>Sharon Kim | 8-Bit Front-End Web Developer</title>
     <meta name="author" content="Sharon Kim">
     <!-- favicon-->
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <!-- Other CDN-->
-    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
     <!-- Personal CSS-->
     <link rel="stylesheet" href="css/styles.css">
@@ -31,16 +31,17 @@
 
     <!-- SKY Section with Clouds, Mario and Icons  -->
     <section class="sky">
-        <img class="custom-fade-in-800" src="img/mountains.png" alt="mountains" id="mountains" />
-        <img class="custom-fade-in-800" src="img/cloud.png" alt="cloud" id="cloud-one" />
-        <img class="custom-fade-in-800" src="img/cloud.png" alt="cloud" id="cloud-two" />
-        <img class="custom-fade-in-800" src="img/cloud.png" alt="cloud" id="cloud-three" />
-        <img class="custom-fade-in-800" src="img/cloud.png" alt="cloud" id="cloud-four" />
-        <img class="custom-fade-in-800" src="img/cloud.png" alt="cloud" id="cloud-five" />
-        <img class="custom-fade-in-800" src="img/js.png" alt="js" id="javascript" />
-        <img class="custom-fade-in-800" src="img/react.png" alt="react" id="react" />
-        <img class="custom-fade-in-800" src="img/htmlcss.png" alt="htmlcss" id="htmlcss" />
-        <img class="custom-fade-in-800" src="img/mario.png" alt="mario" id="mario" />
+        <img class="custom-fade-in-800" src="img/mountains.png" alt="mountains" id="mountains"/>
+        <img class="custom-fade-in-800" src="img/cloud.png" alt="cloud" id="cloud-one"/>
+        <img class="custom-fade-in-800" src="img/cloud.png" alt="cloud" id="cloud-two"/>
+        <img class="custom-fade-in-800" src="img/cloud.png" alt="cloud" id="cloud-three"/>
+        <img class="custom-fade-in-800" src="img/cloud.png" alt="cloud" id="cloud-four"/>
+        <img class="custom-fade-in-800" src="img/cloud.png" alt="cloud" id="cloud-five"/>
+        <img class="custom-fade-in-800" src="img/js.png" alt="js" id="javascript"/>
+        <img class="custom-fade-in-800" src="img/react.png" alt="react" id="react"/>
+        <img class="custom-fade-in-800" src="img/htmlcss.png" alt="htmlcss" id="htmlcss"/>
+        <img class="custom-fade-in-800" src="img/coin.png" alt="coin" id="coin"/>
+        <img class="custom-fade-in-800" src="img/mario.png" alt="mario" id="mario"/>
     </section>
     <!-- Grass -->
     <section class="open-grass-section">
@@ -57,6 +58,9 @@
     <!-- Retro Box(s)-->
     <section class="three-retro-box-container" id="three-retro-box-section">
         <div class="container text-center">
+            <h2 class="main-menu-badge">
+                <span class="badge text-bg-dark">Main Menu</span>
+            </h2>
             <div class="row">
                 <div class="col-lg-4">
                     <div data-aos="fade-up" data-aos-duration="500" class="retro-box-123">
@@ -88,18 +92,20 @@
                 </div>
             </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="2000" class="main-menu-button-home">
+        <div data-aos="fade-up" data-aos-duration="1500" class="main-menu-button-home">
             <a class="nes-btn" href="#cloud-one">HOME</a>
         </div>
     </section>
 
     <!-- About Me Section-->
     <section class="three-about-me">
-        <h2 id="about-me-section">About Me</h2>
+        <h2 id="about-me-section">
+            <span class="badge text-bg-dark">About Me</span>
+        </h2>
         <!-- POKEMON ICONS -->
         <div class="icon-list">
-            <i class="nes-pokeball"></i>
-            <i class="nes-ash"></i>
+            <i class="nes-charmander"></i>
+            <i class="nes-squirtle"></i>
             <i class="nes-bulbasaur"></i>
             <i class="nes-pokeball"></i>
         </div>
@@ -139,7 +145,7 @@
                                         <input type="text" id="name_field" class="nes-input" name="search-term"
                                             value="8 bit retro game" />
                                         <button type="button" class="nes-btn is-primary" id="blue-button">ENTER</button>
-                                        <!--<input type="submit" value="SUBMIT"/>-->
+                                        <button type="button" class="nes-btn is-error" id="red-button">RESET</button>
                                     </form>
                                     <div class="row">
                                         <div class="col-lg-4">

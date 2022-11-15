@@ -72,6 +72,24 @@ async function giphySearch(e) {
     }
 }
 
+async function giphySearchDelete(e){
+    e.preventDefault();
 
-// dont forget your event listener
+    let containerNames = [];
+
+    containerNames.push('giphy-results-A');
+    containerNames.push('giphy-results-B');
+    containerNames.push('giphy-results-C');
+
+    // print your data to the console to see its format, dont forget to delete later
+    // clear out all gifs from previous searches    
+    for(let i=0; i<containerNames.length; i++)
+    {
+        document.getElementById(containerNames[i]).innerHTML = "";
+    }
+}
+
+// Click event for ENTER button
 document.querySelector("#blue-button").addEventListener("click", giphySearch);
+// Click event for RESET button
+document.querySelector("#red-button").addEventListener("click", giphySearchDelete);

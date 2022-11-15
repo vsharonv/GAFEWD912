@@ -67,6 +67,17 @@ body {
     bottom: 30%;
 }
 
+#coin {
+    width: 3%;
+    animation: blink 1.2s linear infinite;
+}
+
+@keyframes blink {
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+    }
+
 #mario {
     width: 13%;
 }
@@ -109,6 +120,13 @@ body {
   }
 
 /* Container holding the image and the text */
+
+.main-menu-badge{
+    font-size: 50px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
 
 .retro-box-123 {
     position: relative;
@@ -297,7 +315,7 @@ body {
 
 /* Home,Menu Button Styling */
 .main-menu-button-home {
-    padding-top: 120px;
+    padding-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -323,18 +341,19 @@ body {
 }
 
 .three-about-me h2{
-    padding-top: 50px;
+    font-size: 50px;
+    padding-top: 0;
     display: flex;
     justify-content: center;
 }
 
 .icon-list {
-    padding-top: 25px;
+    padding-top: 100px;
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
     gap:30px;
-    animation: houdini 3s infinite alternate;
+    animation: houdini 2s infinite alternate;
     
 }
 
@@ -379,7 +398,7 @@ body {
 }
 
 .main-menu-button-menu {
-    padding-top: 100px;
+    padding-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,4 +1,5 @@
 const mario = document.getElementById('mario');
+const coin = document.getElementById('coin');
 const cloudOne= document.getElementById('cloud-one');
 const cloudTwo = document.getElementById('cloud-two');
 const cloudThree = document.getElementById('cloud-three');
@@ -9,6 +10,7 @@ const react = document.getElementById('react');
 const htmlcss = document.getElementById('htmlcss');
 const letsLearn = document.getElementById('lets-learn');
 const marioYFromBottom = 5;
+const coinYFromBottom = 35;
 const cloudOneYFromBottom = 40;
 const cloudOneYMarginLeft = 60;
 const cloudTwoYFromBottom = 80;
@@ -24,6 +26,7 @@ const reactMarginRight = 43;
 const htmlcssMarginRight = 31;
 
 mario.style.bottom = marioYFromBottom + '%';
+coin.style.bottom = coinYFromBottom + '%';
 
 cloudOne.style.bottom = cloudOneYFromBottom + '%';
 cloudOne.style.marginLeft = cloudOneYMarginLeft + '%';
@@ -46,6 +49,7 @@ function move() {
     console.log(incrementer);
 
     mario.style.bottom = marioYFromBottom + incrementer * 0.1 + "%";
+    coin.style.bottom = coinYFromBottom + incrementer * 0.1 + "%";
 
     cloudOne.style.bottom = cloudOneYFromBottom + incrementer * 0.12 + "%";
     cloudOne.style.marginLeft = cloudOneYMarginLeft + incrementer * 0.1 + "%";

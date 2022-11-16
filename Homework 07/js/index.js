@@ -79,7 +79,7 @@ $(document).ready(function() {
 
 // alert function after clicking send button in footer section
 
-function AlertSuccessfulContactFormSubmission()
+function alertSuccessfulContactFormSubmission()
 {
     // Swal.fire(
     //     'Great!',
@@ -100,5 +100,11 @@ function AlertSuccessfulContactFormSubmission()
       })    
 }
 
+function scrollToTheTop(){
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+}
+
 // Click event for SEND button
-document.querySelector("#send-button").addEventListener("click", AlertSuccessfulContactFormSubmission);
+document.querySelector("#send-button").addEventListener("click", alertSuccessfulContactFormSubmission);
+// Click event for arrow up button to go back to the top
+document.querySelector("#scroll-to-top").addEventListener("click", scrollToTheTop);

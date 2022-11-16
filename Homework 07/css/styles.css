@@ -456,6 +456,11 @@ body {
 .contact-form-field {
     padding-left: 80px;
     padding-right: 80px;
+
+}
+
+#send-button {
+    margin-top: 15px;
 }
 
 
